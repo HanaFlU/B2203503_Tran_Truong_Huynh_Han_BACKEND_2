@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "author": "Tran Truong Huynh Han B2203503",
   "license": "ISC",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "eslint": "^9.10.0",
     "eslint-config-prettier": "^9.1.0",
+    "nodemon": "^3.1.6",
     "prettier": "^3.3.3"
   }
 }
