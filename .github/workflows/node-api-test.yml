@@ -10,6 +10,9 @@ jobs:
   test-api:
     runs-on: ubuntu-latest
 
+    env:
+      MONGO_URI: mongodb+srv://tranhantgdd2020:<db_password>@cluster0.cdokk.mongodb.net/ContactBook/?retryWrites=true&w=majority&appName=Cluster0
+    
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
