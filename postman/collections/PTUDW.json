@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "c41cc235-c555-4110-89cf-5090d00d7c6b",
+		"name": "PTUDW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "31756958-c41cc235-c555-4110-89cf-5090d00d7c6b"
+	},
+	"item": [
+		{
+			"name": "ContactBook",
+			"item": [
+				{
+					"name": "favorite",
+					"item": [
+						{
+							"name": "findAllFavorite",
+							"id": "82654a4d-a135-4330-b199-4c4e3fc9c8d0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/contacts/favorite",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contacts",
+										"favorite"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "f65190e9-bc3d-4e78-8961-e38543b1320e"
+				},
+				{
+					"name": "findAll",
+					"id": "d9775bc7-5b56-4596-8166-07c62d7d3800",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/contacts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"id": "5b583231-1dac-4bf4-8c1a-6299f00666de",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Nguyễn Văn An\",\r\n        \"address\": \"Cần Thơ\",\r\n        \"email\": \"nguyenvana@gmail.com\",\r\n        \"phone\": \"0394128301\",\r\n        \"favorite\": true\r\n}\r\n    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/contacts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "635575cc-0c6c-4d74-a2fb-5458d5902c9d"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5d555961-b7e5-472c-a941-865274549d43",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d282c52b-b5b8-46b3-9cf8-8089e54225b9",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "4266a25b-41f3-49da-ab00-5872537f980a",
+			"key": "localhost",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
