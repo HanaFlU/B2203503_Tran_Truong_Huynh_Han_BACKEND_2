@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "81661f34-4a75-4d8e-9aff-e618beb7198d",
+		"name": "PTUDW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31756958",
+		"_collection_link": "https://planetary-desert-970837.postman.co/workspace/H%25E1%25BB%258Dc-API~a543e357-4f21-4160-adea-2e12f2ca2768/collection/31756958-81661f34-4a75-4d8e-9aff-e618beb7198d?action=share&source=collection_link&creator=31756958"
+	},
+	"item": [
+		{
+			"name": "ContactBook",
+			"item": [
+				{
+					"name": "favorite",
+					"item": [
+						{
+							"name": "findAllFavorite",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/contacts/favorite",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contacts",
+										"favorite"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/contacts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
