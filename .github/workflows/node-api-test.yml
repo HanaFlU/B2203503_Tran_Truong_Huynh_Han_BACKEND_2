@@ -32,8 +32,6 @@ jobs:
     - name: Start backend server
       run: npm start &
     
-    - name: Wait for backend to be ready
-      run: wait-on http://localhost:3000
 
     - name: Run Postman Tests
       run: newman run tests/collection.json -e tests/env.json
