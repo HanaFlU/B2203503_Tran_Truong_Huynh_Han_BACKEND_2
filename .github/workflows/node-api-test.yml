@@ -33,5 +33,11 @@ jobs:
       run: npm start &
     
 
-    - name: Run Postman Tests
-      run: newman run tests/collection.json -e tests/env.json
+    - name: Install Postman CLI
+      run: |
+        curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+    - name: Login to Postman CLI
+      run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+    - name: Run API tests
+      run: |
+        postman collection run "${{ github.workspace }}/postman/collections/PTUDW.json" -e "37602483-0497d922-7b8c-4e92-ae22-7c8f8f8e3ada"
