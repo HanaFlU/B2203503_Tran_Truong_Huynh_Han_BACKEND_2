@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MONGO_URI: mongodb+srv://tranhantgdd2020:Mst2Lf0hAEr5CDPo@cluster0.cdokk.mongodb.net/ContactBook/?retryWrites=true&w=majority&appName=Cluster0
+      MONGODB_URI: mongodb+srv://tranhantgdd2020:Mst2Lf0hAEr5CDPo@cluster0.cdokk.mongodb.net/ContactBook/?retryWrites=true&w=majority&appName=Cluster0
+      PORT: 3000 
     
     steps:
     - name: Checkout code
